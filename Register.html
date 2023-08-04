@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="background5">
+           <!--Navigation BAr-->
+            <nav>
+                    <div class="logo">
+                        <img src="Images/logo3.png" width="120px" height="100px">
+                           <ul>
+                               <li><a href="Index.html">Home</a></li>
+                               <li><a href="courses.html">Courses</a></li>
+                               <li><a href="teachers.html">Teachers</a></li>
+                               <li><a href="About us.html">About Us</a></li>
+                               <a href="Register.html"  class="button1">Register</a>
+                    </ul>
+                </div>
+            </nav> 
+           <!--Navigation BAr completed-->
+
+           <!--Registertion form-->
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+            <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+            <button type="button" onclick="register()" class="toggle-btn">Register</button>
+        </div>
+        <form id="login" class="input-group-login">
+            <input type="text" class="input-feild" placeholder="Email Id" required>
+            <input type="password" class="input-feild" placeholder="Enter password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group-register">
+            <input type="text" class="input-feild" placeholder="First Name" required>
+            <input type="text" class="input-feild" placeholder="Last Name" required>
+            <input type="text" class="input-feild" placeholder="Email Id" required>
+            <input type="password" class="input-feild" placeholder="Enter Password" required>
+            <input type="password" class="input-feild" placeholder="confirm Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms and Conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+      </div>
+    </div>
+       <!--Registertion form completed-->
+       <div class="Row">
+  <h1>Begin Learning Quran Now in 3 Easy Steps</h1>
+  <p>
+    Getting yourself or your loved ones familiarized with the teachings of the holy Quran doesn’t have to be a hassle. 
+    This is the reason why Quran Learn Academy has developed an extremely easy to understand online registration process you can go through 
+    to get yourself or your children registered. Just follow these steps to get things on the way
+  </p>
+  <div
+  class="column">
+        <div id="col-1">
+          <h1>1: Click on Register</h1>
+          <p>
+            Simply click on “Register Online” and a tab for online registration will open. There, enter your basic details such as name, residential address,
+             and contact information. Once you are done with providing us theses basic credentials, your process for registration will be complete.
+          </p>
+        </div>  
+        <div id="col-2">
+           <h1>2: Pick a Time for Free Trial</h1>
+           <p>Upon receiving your request for registration, we will get in touch with you to set a time as to when can you take your free
+             trial class. In addition, we will guide you about our Quran teaching process and tell you a little bit about our organization.</p>
+        </div>
+        <div id="col-3">
+         <h1>3: Embark On this Holy Journey with your 1st Class</h1>
+         <p>Initiate your Quran learning process by logging in with the credentials we provide you and start taking your first class with our Quran teachers</p>
+        </div>
+  </div>
+</div>
+     <!--footer-->
+ <div class="Footer">
+    <h1>
+       Any More Questions?Feel Free To Write Us Email</h1>
+       <br><br>
+       <p>
+           <pre>
+       We have more then 15 years experience to provide Online Quran Class services since 2007.
+       Our Teacher Asist as well as your Kids in Learning & Memorization Quran With Tajweed.
+   </pre>
+   </p> 
+<div class="social">
+<a href="https://www.facebook.com"><img src="Images/fbb.png" width="120px" ></a>
+<a href="https://www.instagram.com"><img src="Images/insta1.png"></a>
+<a href="https://www.twitter.com"><img src="Images/twiter.png"></a>
+<a href="https://www.linkedin.com"><img src="Images/linkdn.png"></a>
+</div>
+</div>
+<!--Footer-->
+   <!--form Script-->
+    <script>
+        var x=document.getElementById('login');
+        var y=document.getElementById('register');
+        var z=document.getElementById('btn');
+        function register()
+        {
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px';
+        }
+        function login()
+        {
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='0px';
+            
+        }
+    </script>
+    <script>
+        var modal = documnt.getElementById('login-form');
+        window.onclick = function(event)
+        { 
+            if (event.target == modal)
+            {
+                model.style.display = "none";
+            }
+        }
+    </script>
+    <!--form Script completed-->
+</body>
+</html>
